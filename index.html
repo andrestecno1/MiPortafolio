@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrés García | Portafolio de Soluciones Tecnológicas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --dark: #0f172a;
+            --light: #f8fafc;
+            --gray: #64748b;
+            --accent: #3b82f6;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--dark) 0%, #1e293b 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        h1 { font-size: 2.5rem; margin-bottom: 10px; }
+        .subtitle { font-size: 1.2rem; color: #94a3b8; font-weight: 300; }
+
+        .section-title {
+            text-align: center;
+            margin: 40px 0;
+            font-size: 2rem;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 4px;
+            background: var(--primary);
+            margin: 10px auto;
+        }
+
+        /* Proyectos Grid */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            border: 1px solid #e2e8f0;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .tag {
+            display: inline-block;
+            background: #dbeafe;
+            color: var(--primary);
+            font-size: 0.75rem;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .project-card h3 { margin-bottom: 10px; color: var(--dark); }
+        .project-card p { color: var(--gray); font-size: 0.95rem; margin-bottom: 15px; }
+
+        /* Habilidades */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .skill-item {
+            background: var(--dark);
+            color: white;
+            padding: 8px 18px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+        }
+
+        /* Contacto */
+        .contact-box {
+            background: var(--primary);
+            color: white;
+            border-radius: 15px;
+            padding: 40px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: white;
+            color: var(--primary);
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            margin-top: 20px;
+            transition: opacity 0.3s;
+        }
+
+        .btn:hover { opacity: 0.9; }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Andrés García</h1>
+            <p class="subtitle">Desarrollador de Soluciones de Automatización y Sistemas Web</p>
+            <div class="skills">
+                <span class="skill-item">Python</span>
+                <span class="skill-item">JavaScript</span>
+                <span class="skill-item">Google Colab</span>
+                <span class="skill-item">VBA (Macros)</span>
+                <span class="skill-item">Telegram API</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2 class="section-title">Proyectos Destacados</h2>
+        
+        <div class="projects-grid">
+            <div class="project-card">
+                <span class="tag">Automatización Cloud</span>
+                <h3>Bot de Gestión Media & Cloud</h3>
+                <p>Sistema integrado en Google Colab que utiliza la API de Telegram para automatizar la descarga de contenido y el respaldo masivo hacia MediaFire. Solución enfocada en eficiencia de almacenamiento y gestión de datos remota.</p>
+                <strong>Tecnologías:</strong> Python, Telegram API, Google Colab.
+            </div>
+
+            <div class="project-card">
+                <span class="tag">Web Utility</span>
+                <h3>Gestor de Marcadores Personal</h3>
+                <p>Aplicación web de una sola página (SPA) desarrollada en HTML/JS para la organización de enlaces. Incluye sistema de categorización por etiquetas y un "Modo Sensible" para la privacidad de la información del usuario.</p>
+                <strong>Tecnologías:</strong> Vanilla JavaScript, HTML5, LocalStorage.
+            </div>
+
+            <div class="project-card">
+                <span class="tag">Optimización Office</span>
+                <h3>Motor de Procesamiento VBA</h3>
+                <p>Desarrollo de macros personalizadas para Microsoft Word que automatizan la limpieza, redimensionamiento y organización estética de imágenes en documentos extensos, reduciendo horas de trabajo manual a segundos.</p>
+                <strong>Tecnologías:</strong> VBA (Visual Basic for Applications).
+            </div>
+        </div>
+
+        <h2 class="section-title">Sobre mí</h2>
+        <p style="text-align: center; max-width: 800px; margin: 0 auto; color: var(--gray);">
+            Especialista en convertir procesos manuales lentos en sistemas automáticos eficientes. Mi enfoque combina el poder del procesamiento en la nube con interfaces sencillas como Telegram para crear herramientas que funcionan en cualquier lugar. Constantemente explorando nuevas formas de optimizar flujos de trabajo digitales.
+        </p>
+
+        <div class="contact-box">
+            <h2>¿Tienes un proyecto en mente?</h2>
+            <p>Estoy disponible para proyectos de automatización, bots personalizados y desarrollo web.</p>
+            <a href="mailto:andrespleyoficial@gmail.com" class="btn">Contáctame por Email</a>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 Andrés García - Desarrollado con tecnología de automatización.
+    </footer>
+
+</body>
+</html>
