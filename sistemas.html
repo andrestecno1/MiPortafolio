@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Sistemas | Andrés García</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡️</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --dark: #0f172a;
+            --light: #f8fafc;
+            --gray: #64748b;
+            --accent: #3b82f6;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+        body { background-color: var(--light); color: var(--dark); line-height: 1.6; }
+
+        header {
+            background: linear-gradient(135deg, var(--dark) 0%, #1e293b 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
+        h1 { font-size: 2.5rem; margin-bottom: 10px; }
+        .subtitle { font-size: 1.2rem; color: #94a3b8; font-weight: 300; }
+
+        /* Botón de regreso */
+        .back-link {
+            display: inline-block;
+            margin-bottom: 30px;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .back-link:hover { text-decoration: underline; }
+
+        /* Lista de Sistemas */
+        .category {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+            border: 1px solid #e2e8f0;
+        }
+
+        .category h2 {
+            color: var(--primary);
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+
+        .system-list {
+            list-style: none;
+        }
+
+        .system-list li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 15px;
+            color: #334155;
+        }
+
+        .system-list li::before {
+            content: '⚡';
+            position: absolute;
+            left: 0;
+            top: 2px;
+            font-size: 0.9rem;
+        }
+
+        .system-list strong { color: var(--dark); }
+
+        footer { text-align: center; padding: 40px; color: var(--gray); font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Catálogo Completo de Sistemas</h1>
+            <p class="subtitle">Descubre todas las soluciones y automatizaciones que puedo construir para ti.</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <a href="index.html" class="back-link">← Volver al Portafolio Principal</a>
+
+        <div class="category">
+            <h2>🤖 Bots de Telegram y Asistentes Virtuales</h2>
+            <ul class="system-list">
+                <li><strong>Bot Descargador Universal:</strong> Sistema para enviar un enlace (YouTube, redes sociales) y recibir el video en MP4 directamente en el chat.</li>
+                <li><strong>Bot de Respaldo de Canales:</strong> Extrae todo el contenido multimedia de un canal de Telegram y lo sube automáticamente a servidores externos.</li>
+                <li><strong>Bot Convertidor de Formatos:</strong> Recibe archivos, imágenes o videos y los devuelve en el formato deseado (ej. MP4 a MP3, WebP a JPG).</li>
+                <li><strong>Bot de Notificaciones Automatizadas:</strong> Se conecta a tus sistemas para enviarte alertas a Telegram cuando ocurre un evento importante.</li>
+            </ul>
+        </div>
+
+        <div class="category">
+            <h2>☁️ Transferencias Cloud y Google Colab</h2>
+            <ul class="system-list">
+                <li><strong>Migrador Nube a Nube (Bypass):</strong> Scripts para transferir archivos pesados desde MediaFire, Mega o enlaces directos hacia Google Drive sin gastar tus datos locales.</li>
+                <li><strong>Clonador de Carpetas Drive:</strong> Sistema para copiar masivamente el contenido de un Google Drive a otro de forma remota y rápida.</li>
+                <li><strong>Procesador de Datos Pesados:</strong> Uso del poder de Google Colab para ejecutar scripts de Python que tu computadora normal no soportaría.</li>
+                <li><strong>Auto-Uploader a Servidores:</strong> Descarga contenido remoto y lo sube automáticamente a plataformas de hosting de archivos.</li>
+            </ul>
+        </div>
+
+        <div class="category">
+            <h2>🕸️ Web Scraping y Extracción de Datos</h2>
+            <ul class="system-list">
+                <li><strong>Extractor de Catálogos Web:</strong> Recopila información, precios e imágenes de páginas web y las guarda ordenadas en un Excel o Google Sheets.</li>
+                <li><strong>Monitor de Precios:</strong> Un script que revisa tiendas online periódicamente y te avisa por Telegram si un producto baja de precio.</li>
+                <li><strong>Recolector de Enlaces:</strong> Extrae todos los links de descarga o contenido multimedia ocultos en una página web específica.</li>
+            </ul>
+        </div>
+
+        <div class="category">
+            <h2>⚙️ Herramientas Web Ligeras (HTML/JS)</h2>
+            <ul class="system-list">
+                <li><strong>Gestor de Marcadores Offline:</strong> Una aplicación de un solo archivo HTML para guardar enlaces con etiquetas y "modo de contenido sensible".</li>
+                <li><strong>Ofuscador/Encriptador de Texto:</strong> Herramienta web rápida para ocultar texto o enlaces y generar una versión cifrada.</li>
+                <li><strong>Generadores de Formularios Locales:</strong> Interfaces web sencillas para ingresar datos que luego se procesan sin necesidad de servidores costosos.</li>
+            </ul>
+        </div>
+
+        <div class="category">
+            <h2>📄 Optimización Ofimática (Macros VBA)</h2>
+            <ul class="system-list">
+                <li><strong>Auto-Formato de Documentos Word:</strong> Macro que recorre un documento de 100 páginas y ajusta todas las imágenes al mismo tamaño y estilo en 2 segundos.</li>
+                <li><strong>Limpiador de Texto Masivo:</strong> Automatización para corregir errores de formato, espacios dobles o caracteres extraños en documentos largos.</li>
+                <li><strong>Generador de Reportes Estructurados:</strong> Convierte texto desordenado en tablas con un solo clic usando Visual Basic.</li>
+            </ul>
+        </div>
+
+        <div class="category">
+            <h2>🔗 Flujos de Trabajo (n8n & APIs)</h2>
+            <ul class="system-list">
+                <li><strong>Conector de Aplicaciones:</strong> Creación de flujos de trabajo (workflows) para que distintas plataformas se comuniquen entre sí automáticamente.</li>
+                <li><strong>Publicador Multi-Redes:</strong> Sistema que toma un archivo de una carpeta y lo publica automáticamente en varias plataformas.</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <footer>
+        &copy; 2026 Andrés García - Construyendo soluciones eficientes.
+    </footer>
+
+</body>
+</html>
