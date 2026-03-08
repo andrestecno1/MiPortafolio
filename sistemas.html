@@ -13,6 +13,7 @@
             --light: #f8fafc;
             --gray: #64748b;
             --accent: #3b82f6;
+            --highlight: #f59e0b; /* Color para resaltar la sección especial */
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
@@ -49,6 +50,18 @@
             border: 1px solid #e2e8f0;
         }
 
+        /* Estilo para la categoría especial de Sistemas a Medida */
+        .category-special {
+            background: #fffbeb;
+            border-color: #fde68a;
+            box-shadow: 0 4px 15px -1px rgba(245, 158, 11, 0.15);
+        }
+
+        .category-special h2 {
+            color: #b45309;
+            border-bottom-color: #fde68a;
+        }
+
         .category h2 {
             color: var(--primary);
             border-bottom: 2px solid #e2e8f0;
@@ -75,10 +88,14 @@
             top: 2px;
             font-size: 0.9rem;
         }
+        
+        .category-special .system-list li::before {
+             content: '💡';
+        }
 
         .system-list strong { color: var(--dark); }
 
-        /* Nota de sistemas personalizados */
+        /* Nota de sistemas personalizados (mantenida para las demás) */
         .custom-note {
             margin-top: 20px;
             padding-top: 15px;
@@ -103,6 +120,16 @@
 
     <div class="container">
         <a href="index.html" class="back-link">← Volver al Portafolio Principal</a>
+
+        <div class="category category-special">
+            <h2>💡 Sistemas y Soluciones a Medida</h2>
+            <p style="margin-bottom: 15px; color: #78350f; font-weight: 500;">¿No encuentras lo que buscas en la lista? ¡No hay problema! Mi enfoque principal es resolver problemas únicos.</p>
+            <ul class="system-list">
+                <li><strong>Desarrollo Experimental:</strong> Podemos intentar crear cualquier tipo de sistema, script o automatización que tengas en mente.</li>
+                <li><strong>Adaptabilidad Total:</strong> Cuéntame tu problema manual y evaluaremos qué tecnología (Python, Web, Bots, Macros) es la mejor para automatizarlo.</li>
+                <li><strong>Integraciones Personalizadas:</strong> Si usas plataformas específicas y quieres conectarlas, podemos investigar sus APIs para crear un flujo de trabajo hecho exclusivamente para ti.</li>
+            </ul>
+        </div>
 
         <div class="category">
             <h2>🤖 Bots de Telegram y Asistentes Virtuales</h2>
