@@ -114,6 +114,39 @@
             border: 1px solid rgba(255, 255, 255, 0.2);
         }
 
+        /* Sección de Enlace al Catálogo */
+        .catalog-cta {
+            background: #eff6ff;
+            border: 2px dashed #bfdbfe;
+            border-radius: 12px;
+            padding: 40px 20px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .catalog-cta h3 {
+            color: var(--dark);
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .catalog-cta p {
+            color: var(--gray);
+            margin-bottom: 25px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .btn-catalog {
+            background: var(--primary);
+            color: white;
+        }
+        
+        .btn-catalog:hover {
+            background: #1d4ed8;
+        }
+
         /* Contacto */
         .contact-box {
             background: var(--dark);
@@ -121,7 +154,7 @@
             border-radius: 15px;
             padding: 50px 30px;
             text-align: center;
-            margin-top: 60px;
+            margin-top: 50px;
             box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
         }
 
@@ -142,26 +175,12 @@
             transition: all 0.3s;
         }
 
-        .btn-email {
-            background: white;
-            color: var(--dark);
-        }
-
+        .btn-email { background: white; color: var(--dark); }
         .btn-email:hover { background: #f1f5f9; }
-
-        .btn-wa {
-            background: #25D366;
-            color: white;
-        }
-
+        .btn-wa { background: #25D366; color: white; }
         .btn-wa:hover { background: #20bd5a; }
 
-        footer {
-            text-align: center;
-            padding: 40px;
-            color: var(--gray);
-            font-size: 0.9rem;
-        }
+        footer { text-align: center; padding: 40px; color: var(--gray); font-size: 0.9rem; }
     </style>
 </head>
 <body>
@@ -189,39 +208,45 @@
             <div class="project-card">
                 <span class="tag">Extracción de Datos</span>
                 <h3>Web Scraping Automatizado</h3>
-                <p>Desarrollo de scripts para extraer información masiva de sitios web. Los datos recopilados se pueden guardar automáticamente en bases de datos, enviar directamente a cuentas de Google Drive o recibirlos mediante alertas en un bot de Telegram.</p>
+                <p>Desarrollo de scripts para extraer información masiva de sitios web. Los datos recopilados se pueden guardar automáticamente en bases de datos, enviar a Google Drive o recibirlos en Telegram.</p>
             </div>
 
             <div class="project-card">
                 <span class="tag">Cloud Computing</span>
                 <h3>Transferencias Nube a Nube</h3>
-                <p>Sistemas automatizados para migrar o descargar contenido entre nubes sin usar tu ancho de banda local. Capacidad para procesar enlaces de MediaFire, Mega y Google Drive, subiendo los archivos directamente a tu almacenamiento destino.</p>
+                <p>Sistemas automatizados para migrar o descargar contenido entre nubes sin usar tu ancho de banda local. Capacidad para procesar enlaces de MediaFire, Mega y Google Drive.</p>
             </div>
 
             <div class="project-card">
                 <span class="tag">Bots & Multimedia</span>
                 <h3>Descargadores de Video a Medida</h3>
-                <p>Creación de bots interactivos (ej. Telegram) conectados a motores en Python que reciben enlaces de plataformas sociales o webs y devuelven el archivo de video procesado y listo para usar.</p>
+                <p>Creación de bots interactivos (ej. Telegram) conectados a motores en Python que reciben enlaces de plataformas sociales o webs y devuelven el archivo de video procesado.</p>
             </div>
 
             <div class="project-card">
                 <span class="tag">Eficiencia</span>
                 <h3>Automatización de Tareas Diarias</h3>
-                <p>¿Haces el mismo proceso aburrido todos los días? Creo sistemas personalizados para automatizar tareas repetitivas sencillas, liberando tu tiempo para que te enfoques en lo que realmente importa.</p>
+                <p>Sistemas personalizados para automatizar tareas repetitivas sencillas, liberando tu tiempo para que te enfoques en lo que realmente importa en tu negocio o rutina.</p>
             </div>
 
             <div class="project-card">
                 <span class="tag">Desarrollo Web</span>
                 <h3>Herramientas Ligeras (Single-Page)</h3>
-                <p>Desarrollo de utilidades web eficientes en un solo archivo HTML/JS que no requieren instalación, como gestores de marcadores personalizados con sistemas de etiquetas y modos de seguridad.</p>
+                <p>Desarrollo de utilidades web eficientes en un solo archivo HTML/JS que no requieren instalación, como gestores de marcadores personalizados con sistemas de etiquetas de seguridad.</p>
             </div>
 
             <div class="project-card">
                 <span class="tag">Ofimática</span>
                 <h3>Macros VBA para Documentos</h3>
-                <p>Programación de macros para la suite de Office que automatizan la limpieza, redimensionamiento y organización masiva de imágenes y formatos en documentos extensos en cuestión de segundos.</p>
+                <p>Programación de macros para Office que automatizan la limpieza, redimensionamiento y organización masiva de imágenes y formatos en documentos extensos en cuestión de segundos.</p>
             </div>
 
+        </div>
+
+        <div class="catalog-cta">
+            <h3>¿Quieres ver todo lo que puedo construir?</h3>
+            <p>Explora la lista extendida de herramientas, bots y automatizaciones, o pídeme un desarrollo completamente a la medida de tu problema.</p>
+            <a href="sistemas.html" class="btn btn-catalog">📄 Ver Catálogo de Sistemas</a>
         </div>
 
         <div class="contact-box">
@@ -241,4 +266,3 @@
 
 </body>
 </html>
-
